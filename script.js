@@ -23,6 +23,12 @@ button.addEventListener('click', ()=>{
     }else{
         score.style.backgroundColor = '#F93827'
     }
+});
+
+
+const form = document.getElementById('form');
+form.addEventListener('submit', (e)=>{
+    e.preventDefault();
 })
 
 

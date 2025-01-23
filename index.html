@@ -18,24 +18,24 @@
                     <label class="label">
                       <span class="label-text font-bold text-white">Height</span>
                     </label>
-                    <input type="number" placeholder="cm" class="input input-bordered" required />
+                    <input id="height" type="number" placeholder="cm" class="input input-bordered" required />
                   </div>
                   <div class="form-control">
                     <label class="label">
                       <span class="label-text font-bold text-white">Weight</span>
                     </label>
-                    <input type="number" placeholder="kg" class="input input-bordered" required />
+                    <input id="weight" type="number" placeholder="kg" class="input input-bordered" required />
                   </div>
                   <div class="form-control mt-6">
-                    <button class="btn bg-rose-600 text-white hover:bg-rose-700 border-none text-xl">Calculate</button>
+                    <button id="button" class="btn bg-rose-600 text-white hover:bg-rose-700 border-none text-xl">Calculate</button>
                   </div>
 
                   <!-- BMI score section -->
 
-                  <div class="bg-base-200 p-5 rounded-xl mt-4">
+                  <div id="result" class="bg-base-200 p-5 rounded-xl mt-4 hidden">
 
                     <h1 class="font-bold mb-4 text-xl">Your BMI Score</h1>
-                    <p class="bg-gray-500 inline-block p-4 rounded-xl text-3xl text-white font-bold">50.67</p>
+                    <p id="score" class="bg-gray-500 inline-block p-4 rounded-xl text-3xl text-white font-bold">50.67</p>
 
                   </div>
 
@@ -53,5 +53,6 @@
               </div>
           </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
